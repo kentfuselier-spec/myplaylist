@@ -8,7 +8,7 @@ if [[ -f $path && -f $sourcefile ]]; then
     echo "The contents of playlist.txt should be seperated by genera which is specified by"
     echo "# Genera"
     echo "each subsequent line in that genera needs to be specified like this"
-    echo "Song Title $$ Artist $$ YT link
+    echo "Song Title $$ Artist $$ YT link"
     echo "After this file is made, rerun the script"
     echo ""
   else
