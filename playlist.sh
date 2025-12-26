@@ -17,6 +17,8 @@ if [[ -f $path && -f $sourcefile ]]; then
   fi
 elif [[ -f $path ]]; then
   echo "Need a sourcefile 'playlist.txt' in active dir. See './playlist.sh help' for more info."
-elif [[ -f $path && -f $sourcefile ]]; then
+elif [[ -f $sourcefile ]]; then
   echo "Need to specifiy which dir the finished mp3 are to be placed. './playlist.sh $HOME/Downloads' would be used to place all music in the download folder."
+else
+  echo "Need a sourcefile 'playlist.txt' in active dir. See './playlist.sh help' for more info."
 fi
