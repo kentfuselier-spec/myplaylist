@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-path=$1
 sourcefile="./playlist.txt"
 if [[ $1 == "help" ]]; then
   echo "This script looks for a 'playlist.txt' to download and convert music."
@@ -10,10 +9,10 @@ if [[ $1 == "help" ]]; then
   echo "After this file is made, rerun the script"
   echo ""
 else
-  if [[ -f $path && -f $sourcefile ]]; then
+  if [[ -f $1 && -f $sourcefile ]]; then
     ## Actual script starts here 
     ## Actual script ends here
-  elif [[ -f $path ]]; then
+  elif [[ -f $1 ]]; then
     echo "Need a sourcefile 'playlist.txt' in active dir. See './playlist.sh help' for more info."
   elif [[ -f $sourcefile ]]; then
     echo "Need to specifiy which dir the finished mp3 are to be placed. './playlist.sh \$HOME/Downloads' would be used to place all music in the download folder."
