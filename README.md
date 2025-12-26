@@ -15,6 +15,8 @@ sudo pacman -S ffmpeg youtube-dl
 ```
 
 ## Running Script
+With all uncompressed files in the current working directory run these commands:
+
 ```
 mkdir ./files & \
 chmod +x playlist.sh & \
