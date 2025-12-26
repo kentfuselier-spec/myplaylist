@@ -1,5 +1,5 @@
 # My Playlist 
-## Instalation 
+## Installation 
 Ubuntu/Debian/Mint
 ```
 sudo apt install ffmpeg youtube-dl
