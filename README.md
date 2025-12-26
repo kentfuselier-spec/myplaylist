@@ -1,5 +1,4 @@
 # My Playlist 
----
 ## Instalation 
 Ubuntu/Debian/Mint
 ```
