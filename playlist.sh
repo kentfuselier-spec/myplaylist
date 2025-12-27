@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
+dir="$1"
 sourcefile="./playlist.txt"
-if [[ $1 == "help" ]]; then
+if [[ $dir == "help" ]]; then
   echo "This script looks for a 'playlist.txt' to download and convert music."
   echo "The contents of playlist.txt should be seperated by genera which is specified by"
   echo "# Genera"
@@ -9,10 +10,10 @@ if [[ $1 == "help" ]]; then
   echo "After this file is made, rerun the script"
   echo ""
 else
-  if [[ -f $1 && -f $sourcefile ]]; then
+  if [[ -d $dir && -f $sourcefile ]]; then
     ## Actual script starts here 
     ## Actual script ends here
-  elif [[ -f $1 ]]; then
+  elif [[ -d $dir ]]; then
     echo "Need a sourcefile 'playlist.txt' in active dir. See './playlist.sh help' for more info."
   elif [[ -f $sourcefile ]]; then
     echo "Need to specifiy which dir the finished mp3 are to be placed. './playlist.sh \$HOME/Downloads' would be used to place all music in the download folder."
